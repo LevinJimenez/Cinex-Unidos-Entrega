@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://cinexunidos-production.up.railway.app/assets/chat.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+  <title>Chat personal</title>
+  <link rel="stylesheet" href="./Chat personal_files/normalize.min.css">
+  <link rel="stylesheet" href="./Chat personal_files/all.min.css">
+  <link rel="stylesheet" href="./Chat personal_files/chat.css">
+<style>
+      body.shimeji-pinned iframe {
+        pointer-events: none;
+      }
+      body.shimeji-select-ie {
+        cursor: cell !important;
+      }
+      #shimeji-contextMenu::-webkit-scrollbar {
+        width: 6px;
+      }
+      #shimeji-contextMenu::-webkit-scrollbar-thumb {
+        background-color: rgba(30,30,30,0.6);
+        border-radius: 3px;
+      }
+      #shimeji-contextMenu::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style><meta name="shimejiBrowserExtensionId" content="gohjpllcolmccldfdggmamodembldgpc" data-version="2.0.5"></head>
+
+<body>
+  <div class="information-bubble">
+    <h3>Estado del chat:
+      <small class="" id="status-online">online</small>
+      <small class="hidden" id="status-offline">offline</small>
+    </h3>
+
+    <h3>Personas conectadas</h3>
+    <ul id="users-list"><li>siuu</li></ul>
+
+    <button id="disconnect-btn" type="submit">Cerrar sesión</button>
+  </div>
+
+  <!-- Ubicación del chat -->
+  <div class="bottom-right">
+    <!-- Chat -->
+    <div class="chat">
+      <!-- Información del contacto -->
+      <div class="contact bar">
+        <div class="pic" id="username-pic"><img src="./Chat personal_files/avatar.svg" alt="siuu"></div>
+        <div class="name" id="username">siuu</div>
+        <div class="seen" id="last-seen"><small>Hoy a las 1:40 a.&nbsp;m.</small></div>
+      </div>
+
+      <div class="messages" id="chat">
+
+        <div style="display:none;">
+          <div class="time">
+            Hoy a las 11:41
+          </div>
+
+          <div class="message incoming">
+            Oh, ¿cuál es su problema? 🤔
+          </div>
+
+          <div class="message">
+            Me robaron mi butaca de la función cine 😡
+          </div>
+        </div>
+
+        <!-- Burbujas mientras escribe -->
+        <div class="message" style="display: none;">
+          <div class="typing typing-1"></div>
+          <div class="typing typing-2"></div>
+          <div class="typing typing-3"></div>
+        </div>
+      </div>
+
+      <!-- Inputs y Forms -->
+      <form class="input">
+        <input placeholder="Escribe tu mensaje aquí" type="text">
+        <i class="fas fa-paper-plane"></i>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./Chat personal_files/socket.io.min.js.descarga"></script>
+  <script src="./Chat personal_files/app.js.descarga"></script>
+
+
+<div id="shimeji-workArea" style="position: fixed; background: transparent; z-index: 2147483643; width: 100vw; height: 100vh; left: 0px; top: 0px; transform: translate(0px, 0px); pointer-events: none;"></div></body></html>

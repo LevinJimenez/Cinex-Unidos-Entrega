@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Soporte</title>
+    <link rel="stylesheet" href="stylesasiento.css" />
+    <link rel="stylesheet" href="chat.css" />
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header-soporte">
+        <a id="logo">
+            <img src="https://cinexunidos-production.up.railway.app/assets/images/cinex-unidos.png" width="110"
+                height="80" />
+        </a>
+    </header>
+
+
+    <main >
+        
+        <div >
+            <div class="information-bubble">
+              <button id="disconnectBtn-btn" onclick="sendMessage()">Cerrar sesión</button>
+                <h3 class="textoT">Estado del chat:
+                  <small class="" id="status-online">online</small>
+                  <small class="hidden" id="status-offline">offline</small>
+                </h3>
+            
+                <h3 class="textoT">Personas conectadas:</h3>
+                <ul id="users-list"></ul>
+              </div>
+        </div>
+      
+        <div class="chat" id="chatOriginal" style="display: none;">
+            <!-- Información del contacto -->
+            <div class="contact bar">
+              <div class="pic" ><img id="username-pic1" src="./Chat personal_files/avatar.svg" alt="Imagen"></div>
+              <div class="name" id="username">siuu</div>
+              <div class="seen" id="last-seen"><small>Hoy a las 1:40 a.&nbsp;m.</small></div>
+            </div>
+      
+            <div class="messages" id="chat" >
+      
+              <div style="display:none;">
+                <div class="time">
+                </div>
+      
+                <div class="message incoming">
+                </div>
+      
+                <div class="message">
+                </div>
+              </div>
+      
+              <!-- Burbujas mientras escribe -->
+              <div class="message" style="display: none;">
+                <div class="typing typing-1"></div>
+                <div class="typing typing-2"></div>
+                <div class="typing typing-3"></div>
+              </div>
+            </div>    
+            
+          </div>
+          
+          <form id="form-input-soporte" class="input">
+            <input id="input-soporte" placeholder="Escribe tu mensaje aquí" type="text">
+            <i class="fas fa-paper-plane"></i>
+          </form>
+       
+    </main>
+    
+    <script src="app.js"></script>
+
+</body>
+
+</html>

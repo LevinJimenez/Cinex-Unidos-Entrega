@@ -6,40 +6,27 @@
     <title>Cinex Unidos</title>
     <link rel="stylesheet" href="stylesasiento.css" />
     <link rel="stylesheet" href="chat.css" />
-<<<<<<< HEAD
     <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"
         integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
         crossorigin="anonymous"></script>
-=======
-    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
->>>>>>> main
 </head>
 
 <body>
     <header class="header">
-        <a id="logo">
+        <a id="logo" onclick="home()">
             <img src="https://cinexunidos-production.up.railway.app/assets/images/cinex-unidos.png" width="110"
                 height="80" />
         </a>
         <ul id="navbar-options">
-<<<<<<< HEAD
             <li><a id="home" onclick="home()">CINES EN TU CIUDAD</a></li>
             <li><a id="dulceria-btn" onclick="dulceria()">DULCERÍA</a></li>
             <li><a id="promocion-btn" onclick="promocion()">PROMOCIONES</a></li>
             <li><a id="help" onclick="soporte()">SOPORTE<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                         fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
-=======
-            <li><a id="home">CINES EN TU CIUDAD</a></li>
-            <li><a id="dulceria-btn">DULCERÍA</a></li>
-            <li><a id="promocion-btn">PROMOCIONES</a></li>
-            <li><a id="help">SOPORTE<svg xmlns="http://www.w3.org/2000/svg" onclick="iniciar()" width="16" height="16" fill="currentColor"
-                        class="bi bi-question-circle-fill" viewBox="0 0 16 16">
->>>>>>> main
                         <path
                             d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z" />
                     </svg></a></li>
         </ul>
-<<<<<<< HEAD
         <button id="menu" class="navbar__toggle-btn grow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
@@ -58,41 +45,12 @@
                         </svg></a></li>
             </ul>
         </div>
-=======
-            <button id="menu" class="navbar__toggle-btn" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-              </svg></button>
-            <div id="mobile-menu" class="overlay">
-                <a id="cerrar-menu" class="close">&times;</a>
-                <ul class="overlay-content">
-                    <li><a id="home">CINES EN TU CIUDAD</a></li>
-                    <li><a id="dulceria-btn">DULCERÍA</a></li>
-                    <li><a id="promocion-btn">PROMOCIONES</a></li>
-                    <li><a id="help">SOPORTE<svg xmlns="http://www.w3.org/2000/svg" onclick="iniciarCliente()" width="16" height="16"
-                    fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
-                    <path
-                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z" />
-                    </svg></a></li>
-                </ul>
-            </div>
->>>>>>> main
     </header>
 
 
     <main id="seleccionar-cine">
         <h1>Selecciona el cine de tu preferencia</h1>
         <div id="cines-contenedor">
-            <div class="information-bubble">
-                <h3>Estado del chat:
-                  <small class="" id="status-online">online</small>
-                  <small class="hidden" id="status-offline">offline</small>
-                </h3>
-            
-                <h3>Personas conectadas</h3>
-                <ul id="users-list"></ul>
-            
-                <button id="disconnectBtn-btn" onclick="sendMessage()">Cerrar sesión</button>
-              </div>
         </div>
     </main>
 
@@ -212,6 +170,7 @@
         <div id="snacks" class="dulceria-layout">
         </div>
     </main>
+
     <main id="promociones-contenedor" style="display:none">
         <h1>Promociones</h1>
         <div class="promociones-layout" class="dulceria-layout">
@@ -237,19 +196,7 @@
             </div>
         </div>
     </main>
-<<<<<<< HEAD
 
-=======
-    <main id="contenedor-resumen" style="display:none">
-            <div>
-                
-                <h2>¡Compra exitosa!</h2>
-                <p>Boletos:<div id="asientos-resumen"></div></p>
-                <p>Gracias por tu compra, te esperamos en la función</p>
-                <button id="volver-resumen">Menu Principal</button>
-            </div>
-    </main>
->>>>>>> main
     <script src="script.js"></script>
     <script src="soportecliente.js"></script>
 </body>
